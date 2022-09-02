@@ -9,46 +9,19 @@ Download terraform(https://www.terraform.io/downloads) -> unzip file -> terrafor
 
 ->Edit the system environment variales -> System variables -> click on Path -> enter terraform.exe file path -> New -> Ok 
 
-# Linux remote Sandbox
-Step 1: Launch EC2 instance and execute the below commands
-
-$ sudo yum install git -y
-
-$sudo yum install -y yum-utils
-
-$sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
-
-$sudo yum -y install terraform
-
 AWS
 ======
 Execution Flow
 =====================
 Step 1: Authentication to AWS 
 
-$vi aws_export.sh
-
-export AWS_ACCESS_KEY_ID="" 
-
-export AWS_SECRET_ACCESS_KEY=""
-
-$source aws_export.sh
-
-or 
-
 $Env:AWS_ACCESS_KEY_ID=""
 
 $Env:AWS_SECRET_ACCESS_KEY=""
 
-$git clone https://github.com/csp2022/CSP.git
+Step 2: clone repo
 
-$cd CSP/provider-templates/aws
-
-The below two lines belongs to aws lambda layers
-
-$pip install pymysql -t python --upgrade --no-user
-
-$mv python modules/computing/scripts
+$git clone https://github.com/csp2022/CSP.git && cd CSP/provider-templates/aws
 
 $ssh-keygen
 

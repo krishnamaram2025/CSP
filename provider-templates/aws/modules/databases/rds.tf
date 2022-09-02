@@ -1,6 +1,6 @@
 resource "aws_db_instance" "mysqldb" {
 #  count = "${var.rds_mysql_db["recover"] ? 0 : 1}"
-  identifier           = "mysqldb"
+  identifier           = "mysqldb9"
   allocated_storage    = 10
   engine               = "mysql"
   engine_version       = "5.7"

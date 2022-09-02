@@ -3,7 +3,7 @@ output "myaccount" {
 }
 
 output "bastionhost_public_ip" {
-  value = "ssh -i ~/Downloads/mykp.pem centos@${module.computing.bastionhost_public_ip}"
+  value = "ssh centos@${module.computing.bastionhost_public_ip}"
 }
 
 output "elb_dns_name" {
